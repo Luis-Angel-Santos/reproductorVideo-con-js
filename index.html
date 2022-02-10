@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <link rel="icon" href="/favicon.ico" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta
+      name="description"
+      content="Web site created using create-snowpack-app"
+    />
+  
+    <link
+      rel="stylesheet"
+      type="text/css"
+      href="/_dist_/index.css"
+    />
+    <title>Reprodcutor de video</title>
+  </head>
+  <body background="video/fondo.jpg">
+    <div class="py-10 max-w-screen-xl mx-auto px-4 sm:px-6 lg:px-8">
+      <div class="text-center">
+        <p
+          class="text-base leading-6 text-white font-semibold tracking-wide uppercase"
+        >
+          Reproductor de video
+        </p>
+        <br>
+        <center>
+            <video id="video" height="250" controls poster="video/bob.jpg">
+              <source src="video/video.mp4" type="video/mp4">
+              Tu navegador no soporta este tipo de video
+            </video>
+            <br><br>
+        </center>
+        <div class="botones">
+          <button id="iniciar" class="py-2 px-4 border border-transparent shadow-sm text-sm font-medium rounded-md text-white bg-green-600 hover:bg-green-900 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-green-500">Pausa</button>
+          <button id="recargar" class="py-2 px-4 border border-transparent shadow-sm text-sm font-medium rounded-md text-white bg-blue-600 hover:bg-blue-900 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-blue-500">Recargar Video</button>
+          <button id="maximizar" class="py-2 px-4 border border-transparent shadow-sm text-sm font-medium rounded-md text-white bg-gray-600 hover:bg-gray-900 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-gray-500">Pantalla completa</button>
+          <button id="silenciar" class="py-2 px-4 border border-transparent shadow-sm text-sm font-medium rounded-md text-white bg-red-600 hover:bg-red-900 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-red-500">Silenciar</button>
+          <button id="volumen" class="py-2 px-4 border border-transparent shadow-sm text-sm font-medium rounded-md text-white bg-purple-600 hover:bg-purple-900 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-purple-500">Bajar Volumen</button>
+          <button id="volumenS" class="py-2 px-4 border border-transparent shadow-sm text-sm font-medium rounded-md text-white bg-purple-600 hover:bg-purple-900 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-purple-500">Subir Volumen</button>
+        </div>
+    <script type="module" src="/_dist_/index.js"></script>
+  </body>
+</html>
